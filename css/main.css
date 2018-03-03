@@ -1,0 +1,85 @@
+
+/* CSS properties for the portfolio website & branding
+
+**************************************************************************************************/
+
+/* grid structure ================================ */
+
+/* all properties */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* flexbox (container) */
+.box {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+/* columns (different flex sizes) */
+.box-col1 { flex: 1; }
+.box-col2 { flex: 2; }
+.box-col3 { flex: 3; }
+
+.box-col1, .box-col2, .box-col3 {
+  margin: 2% 1%;
+  padding: 0 1%;
+}
+
+/* 
+to be applied to columns that 
+don't need margin or padding
+*/
+.no-space {
+  margin: 0;
+  padding: 0;
+}
+
+/* text & background ============================= */
+
+body {
+  font-family: DIN-Mitt, sans-serif;
+  background: linear-gradient(white, #D3D2D5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 { 
+  font-size: 1.875rem;
+}
+
+h2 { 
+  font-size: 1.375rem;
+}
+
+h1, h2 {
+  font-family: DIN-Eng, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: #252525;
+}
+
+h3 { 
+  font-size: 1.1rem;
+  color: #252525; 
+}
+
+p {
+  color: #878787;
+}
+
+/* footer ======================================== */
+
+footer {
+  background-color: #2E2A3A;
+  padding: 6rem 5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+

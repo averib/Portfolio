@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'DIN-Eng';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DINEngschriftStd.eot');
+    src: url('../fonts/DINEngschriftStd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DINEngschriftStd.otf'),
+         url('../fonts/DINEngschriftStd.ttf') format('trutype'),
+         url('../fonts/DINEngschriftStd.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN-Mitt';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DINMittelschriftStd.otf'),
+         url('../fonts/DINMittelschriftStd.ttf');
+}
