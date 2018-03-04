@@ -14,7 +14,7 @@
   
   <body>
     <!-- navbar -->
-    <header>
+    <header id="home-header">
       <nav>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -30,16 +30,17 @@
     </section>
 
     <!-- projects section -->
-    <section id="projects" class="box">
+    <div id="projects" class="box">
       <!-- ******* change to figure elements w/ captions later ******* -->
-      <p class="box-col1 placeholder-img">UX/UI Design Project</p>
-      <p class="box-col1 placeholder-img">Visual Design Project</p>
-      <p class="box-col1 placeholder-img">Illustration Gallery</p>
-    </section>
+      <p class="box-col1 placeholder-img" onclick="openProjectUX()">UX + UI Design Project</p>
+      <p class="box-col1 placeholder-img" onclick="openProjectUX()">Visual Design Project</p>
+      <p class="box-col1 placeholder-img" onclick="openProjectUX()">Illustration Gallery</p>
+    </div>
 
     <!-- about section -->
     <section id="about" class="box">
-      <p class="box-col1 placeholder-img">Img</p> <!-- ******* change to img w/ box-col1 class later ******* -->
+      <!-- ******* change to img w/ box-col1 class later ******* -->
+      <p class="box-col1 placeholder-img">Img</p>
 
       <div class="box-col1">
         <h1>Hello</h1>

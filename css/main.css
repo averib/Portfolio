@@ -14,6 +14,19 @@ body, html {
   height: 100%;
 }
 
+/* fade-in effect */
+@keyframes fadeIn {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* whole page fade-in */
+html {
+  animation: fadeIn 2.5s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
 /* flexbox (container) */
 .box {
   display: -webkit-flex;
@@ -51,7 +64,7 @@ body {
 }
 
 h1 { 
-  font-size: 1.875rem;
+  font-size: 1.625rem;
 }
 
 h2 { 
@@ -74,13 +87,49 @@ p {
   color: #878787;
 }
 
+/* buttons ======================================= */
+
+.button {
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  border-radius: 100px;
+  font-size: 1rem;
+  width: 10rem;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.button:hover {
+  filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
+}
+
+.btn-primary {
+  background-color: #6B6874;
+  color: #F5F4F5;
+  border: 0.1rem solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: #272727;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #6B6874;
+  border: 0.1rem solid #6B6874;
+}
+
+.btn-secondary:hover {
+  color: #272727;
+  border-color: #272727;
+}
+
 /* header (navbar) =============================== */
 
 nav {
   font-family: DIN-Eng;
   padding: 3% 6%;
   text-align: center;
-  background-color: white;
 }
 
 nav a {
@@ -99,12 +148,25 @@ nav a:hover, nav a:active, nav a:focus {
 
 /* landing section =============================== */
 
+/* only for landing section navbar */
+#home-header nav {
+  background-color: white;
+}
+
+/* entire landing section */
 #intro {
   background: linear-gradient(white, #484452);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 85%;
+}
+
+/* logo fade-in */
+#intro #ab-logo {
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 /* portfolio logo */
@@ -130,7 +192,7 @@ nav a:hover, nav a:active, nav a:focus {
   margin-top: 2%;
 }
 
-/* projects section ============================== */
+/* project list section ========================== */
 
 #projects {
   padding: 5% 6%;
@@ -141,18 +203,22 @@ nav a:hover, nav a:active, nav a:focus {
   text-align: center;
 }
 
-/* placeholder stuff ************ */
+/* [placeholder] */
 .placeholder-img {
   background-color: white;
   text-align: center;
   transition: 0.3s;
 }
 
+/* [placeholder, for project list only] */
 #projects .placeholder-img:hover {
   filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
   cursor: pointer;
+
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
-/* ****************************** */
 
 /* about section ================================= */
 
@@ -174,9 +240,33 @@ footer {
   text-align: center;
 }
 
+/* project page ================================== */
 
+#overview {
+  height: 85%;
+  margin: 0 6%;
+  align-items: center;
+}
 
+.project-type {
+  margin-bottom: 15%;
+}
 
+/* placeholder img */
+.test-img {
+  display: block;
+  margin: auto;
+  width: 20%;
 
+  /* img fade-in */
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
 
+#process {
+  height: 100%;
+  padding: 5% 6%;
+  align-items: center;
+}
 
