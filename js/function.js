@@ -1,3 +1,4 @@
+"use strict";
 
 // testing purposes
 console.log("JavaScript is running on this page");
@@ -10,6 +11,11 @@ TO ADD LATER:
         http://jsfiddle.net/robert/fjXSq/
         https://stackoverflow.com/questions/5980237/show-back-to-top-link-element-using-jquery-when-you-scroll-down
 */
+
+// test
+function openProject() {
+    window.location.href = "ux-ui-project.html"
+}
 
 // jquery
 $(document).ready(function() {
