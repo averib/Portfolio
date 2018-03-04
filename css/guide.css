@@ -80,6 +80,11 @@
   text-align: left !important;
 }
 
+.code {
+  border: 1px solid #C9C9C9;
+  padding: 3%;
+}
+
 code {
   font-family: monospace;
   color: #878787;
