@@ -89,6 +89,7 @@ p {
 
 /* buttons ======================================= */
 
+/* for all buttons */
 .button {
   text-decoration: none;
   padding: 0.7rem 2rem;
@@ -102,6 +103,8 @@ p {
 .button:hover {
   filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
 }
+
+/* DARK versions ------------ */
 
 .btn-primary {
   background-color: #6B6874;
@@ -122,6 +125,29 @@ p {
 .btn-secondary:hover {
   color: #272727;
   border-color: #272727;
+}
+
+/* LIGHT versions ----------- */
+
+.btn-primary-light {
+  background-color: #CCC;
+  color: #2E2A3A;
+  border: 0.1rem solid transparent;
+}
+
+.btn-primary-light:hover {
+  background-color: white;
+}
+
+.btn-secondary-light {
+  background-color: transparent;
+  color: #CCC;
+  border: 0.1rem solid #CCC;
+}
+
+.btn-secondary-light:hover {
+  color: white;
+  border-color: white;
 }
 
 /* header (navbar) =============================== */
@@ -226,6 +252,7 @@ nav a:hover, nav a:active, nav a:focus {
   background: linear-gradient(#484452, #2E2A3A);
   padding: 5% 6%;
   height: 100%;
+  align-items: center;
 }
 
 #about h1 {
@@ -265,7 +292,7 @@ footer {
 }
 
 .project-page-btn {
-  margin-top: 10%;
+  margin-top: 13%;
 }
 
 .process {
