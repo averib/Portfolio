@@ -16,7 +16,7 @@
   font-size: 1.5rem;
 }
 
-#ab-logo {
+#guide-header #ab-logo {
   display: block;
   margin: auto;
   width: 7%;
@@ -25,13 +25,13 @@
 
 /* table of contents ============================= */
 
+/* overwrite nav styling from main.css */
 #guide-toc {
   filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
   background-color: #6B6874;
   border-radius: 100px;
   margin: 0 6%;
   padding: 3% 6%;
-  text-align: center;
   opacity: 0.6;
   transition: 0.8s;
 }
@@ -42,16 +42,11 @@
 
 #guide-toc a {
   margin: 0 6%;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
   color: #ECEBEC;
-  transition: 0.3s;
 }
 
 #guide-toc a:hover, #guide-toc a:active, #guide-toc a:focus {
   color: white;
-  letter-spacing: 4px;
 }
 
 /* style guide =================================== */
@@ -72,7 +67,7 @@
 }
 
 /* separator lines */
-#guide-content .rendered::after {
+#guide-content .rendered-h3::after {
   display: block;
   content: '';
   width: 100%;
@@ -81,7 +76,7 @@
 }
 
 /* rendered element section column */
-.rendered-sec h2 {
+.rendered h2 {
   text-align: left !important;
 }
 
