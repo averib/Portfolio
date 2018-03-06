@@ -124,6 +124,7 @@ a:hover {
 
 .btn-primary:hover {
   background-color: #272727;
+  color: white;
 }
 
 .btn-secondary {
