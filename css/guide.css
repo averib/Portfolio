@@ -90,4 +90,8 @@ code {
   color: #878787;
 }
 
+/* navbar style */
+#navigation nav {
+  background-color: white;
+}
 
