@@ -125,6 +125,7 @@ p {
 .btn-secondary:hover {
   color: #272727;
   border-color: #272727;
+  background-color: rgba(39, 39, 39, 0.1);
 }
 
 /* LIGHT versions ----------- */
@@ -148,6 +149,7 @@ p {
 .btn-secondary-light:hover {
   color: white;
   border-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* header (navbar) =============================== */
