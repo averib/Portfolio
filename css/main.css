@@ -97,6 +97,17 @@ a:hover {
   letter-spacing: 1px;
 }
 
+/* lists ========================================= */
+
+ul, ol {
+  color: #878787;
+  line-height: 2.5rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
 /* buttons ======================================= */
 
 /* for all buttons */
