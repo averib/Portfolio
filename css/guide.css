@@ -95,3 +95,19 @@ code {
   background-color: white;
 }
 
+/* colour swatches */
+#swatches {
+  text-align: center;
+}
+
+#swatches p {
+  padding: 5rem 0;
+}
+
+.white        { background-color: white; }
+.grey-light   { background-color: #CCC; }
+.grey         { background-color: #878787; color: #CCC; }
+.purple-light { background-color: #8B8991; color: #CCC; }
+.purple       { background-color: #484452; }
+.purple-dark  { background-color: #2E2A3A; }
+.grey-dark    { background-color: #272727; }
