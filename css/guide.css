@@ -90,9 +90,19 @@ code {
   color: #878787;
 }
 
-/* navbar style */
-#navigation nav {
+/* grid structure */
+.grid-display p {
   background-color: white;
+}
+
+/* controls the spacing between grid elements */
+.grid-display .box-col1, .grid-display .box-col2 {
+  margin: 0.3rem;
+}
+
+/* make columns in grid display taller */
+.col-height {
+  padding-bottom: 15%;
 }
 
 /* colour swatches */
