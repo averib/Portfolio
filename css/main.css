@@ -126,6 +126,10 @@ ul {
   letter-spacing: normal;
 }
 
+.btn-spacing {
+  margin-top: 13%;
+}
+
 /* DARK versions ------------ */
 
 .btn-primary {
@@ -331,13 +335,20 @@ footer {
   opacity: 0;
 }
 
-.project-page-btn {
-  margin-top: 13%;
-}
-
 .process {
   height: 100%;
   padding: 5% 6%;
   align-items: center;
 }
 
+/* contact page ================================== */
+
+.current {
+  color: #272727;
+}
+
+#contact {
+  height: 85%;
+  margin: 0 6%;
+  align-items: center;
+}
