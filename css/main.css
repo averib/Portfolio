@@ -273,6 +273,10 @@ nav a:hover, nav a:active, nav a:focus {
   text-align: center;
 }
 
+.project {
+  align-items: center;
+}
+
 /* [placeholder] */
 .placeholder-img {
   background-color: white;
