@@ -23,21 +23,21 @@ $(window).on("scroll", function() {
 function projectInView() {
     // project 1
     if (isScrolledIntoView(document.getElementsByClassName('prj1')[0])) {
-        $("#project1").css("background-image", "url('img/ab-logo.png')");
+        $("#project1").css("background-image", "url('img/ab-logo-white.png')");
     } else {
         $("#project1").css("background-image", "url('img/placeholder.png')");
     }
 
     // project 2
     if (isScrolledIntoView(document.getElementsByClassName('prj2')[0])) {
-        $("#project2").css("background-image", "url('img/ab-logo.png')");
+        $("#project2").css("background-image", "url('img/ab-logo-white.png')");
     } else {
         $("#project2").css("background-image", "url('img/placeholder.png')");
     }
 
     // if project 3 is in view
     if (isScrolledIntoView(document.getElementsByClassName('prj3')[0])) {
-        $("#project3").css("background-image", "url('img/ab-logo.png')");
+        $("#project3").css("background-image", "url('img/ab-logo-white.png')");
     } else {
         $("#project3").css("background-image", "url('img/placeholder.png')");
     }
