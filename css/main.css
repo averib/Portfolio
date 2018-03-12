@@ -14,19 +14,6 @@ body, html {
   height: 100%;
 }
 
-/* fade-in effect */
-@keyframes fadeIn {
-  0%    { opacity: 0; }
-  100%  { opacity: 1; }
-}
-
-/* whole page fade-in */
-html {
-  animation: fadeIn 2.5s forwards;
-  animation-delay: 0.2s;
-  opacity: 0;
-}
-
 /* flexbox (container) */
 .box {
   display: -webkit-flex;
@@ -54,6 +41,21 @@ don't need margin or padding
   padding: 0;
 }
 
+/* animations ==================================== */
+
+/* fade-in effect */
+@keyframes fadeIn {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* whole page fade-in */
+html {
+  animation: fadeIn 2.5s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
 /* text & background ============================= */
 
 body {
@@ -74,7 +76,7 @@ h2 {
 h1, h2 {
   font-family: DIN-Eng, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 12px;
   color: #272727;
 }
 
@@ -263,12 +265,35 @@ nav a:hover, nav a:active, nav a:focus {
 
 /* project list section ========================== */
 
-#projects {
-  padding: 5% 6%;
-  height: 100%;
+#project1, #project2, #project3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
 }
 
-#projects h2 {
+#project1 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
+}
+
+#project2 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
+}
+
+#project2 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
+}
+
+.project {
+  padding: 5% 6%;
+  height: 100%;
+  align-items: center;
+}
+
+.project h2 {
   text-align: center;
 }
 
