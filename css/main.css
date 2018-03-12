@@ -266,23 +266,36 @@ nav a:hover, nav a:active, nav a:focus {
 
 /* project list section ========================== */
 
-#projects {
-  /* test bg image */
-  background-image: url('../img/placeholder.png');
+#project1, #project2, #project3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
 }
 
-#projects h2 {
-  text-align: center;
+#project1 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
+}
+
+#project2 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
+}
+
+#project2 {
+  /* test bg image */
+  background-image: url('../img/placeholder.png');
 }
 
 .project {
   padding: 5% 6%;
   height: 100%;
   align-items: center;
+}
+
+.project h2 {
+  text-align: center;
 }
 
 /* [placeholder] */

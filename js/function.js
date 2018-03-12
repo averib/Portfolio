@@ -14,21 +14,36 @@ function openProjectUX() {
     window.location.href = "ux-ui-project.html";
 }
 
-// detect if element is scrolled into view, change bg image
-var scrollEventHandler = function() {
+// scroll event
+$(window).on("scroll", function() {
+    projectInView();
+});
 
-    // if project 1 is scrolled into view
-    if(isScrolledIntoView(document.getElementsByClassName('box-col2')[0])) {
-        $("#projects").css("background-image", "url('img/ab-logo.png')");
-        console.log("IN view");
+// change bg of project 1 section if scrolled into view
+function projectInView() {
+    // project 1
+    if (isScrolledIntoView(document.getElementsByClassName('prj1')[0])) {
+        $("#project1").css("background-image", "url('img/ab-logo.png')");
     } else {
-        $("#projects").css("background-image", "url('img/placeholder.png')");
-        console.log("OUT of view");
+        $("#project1").css("background-image", "url('img/placeholder.png')");
+    }
+
+    // project 2
+    if (isScrolledIntoView(document.getElementsByClassName('prj2')[0])) {
+        $("#project2").css("background-image", "url('img/ab-logo.png')");
+    } else {
+        $("#project2").css("background-image", "url('img/placeholder.png')");
+    }
+
+    // if project 3 is in view
+    if (isScrolledIntoView(document.getElementsByClassName('prj3')[0])) {
+        $("#project3").css("background-image", "url('img/ab-logo.png')");
+    } else {
+        $("#project3").css("background-image", "url('img/placeholder.png')");
     }
 }
 
-$(document).scroll(scrollEventHandler);
-
+// checks if an element is completely scrolled into view
 function isScrolledIntoView(el) {
     var rect = el.getBoundingClientRect();
     var elemTop = rect.top;
