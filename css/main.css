@@ -327,6 +327,10 @@ nav a:hover, nav a:active, nav a:focus {
   color: #CCC;
 }
 
+#about p {
+  text-align: justify;
+}
+
 /* footer ======================================== */
 
 footer {
