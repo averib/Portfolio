@@ -4,4 +4,18 @@
     .box {
         flex-direction: column;
     }
+
+    /* center the text in project list section */
+    .project h1, .project p {
+        text-align: center;
+    }
+
+    /* re-style and re-position all buttons */
+    .button {
+        display: block;
+        margin: auto;
+        width: 20rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
 }
