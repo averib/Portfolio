@@ -14,6 +14,31 @@ function openProjectUX() {
     window.location.href = "ux-ui-project.html";
 }
 
+// detect if element is scrolled into view, change bg image
+var scrollEventHandler = function() {
+
+    // if project 1 is scrolled into view
+    if(isScrolledIntoView(document.getElementsByClassName('box-col2')[0])) {
+        $("#projects").css("background-image", "url('img/ab-logo.png')");
+        console.log("IN view");
+    } else {
+        $("#projects").css("background-image", "url('img/placeholder.png')");
+        console.log("OUT of view");
+    }
+}
+
+$(document).scroll(scrollEventHandler);
+
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+}
+
+// ==================================================================
+
 // jquery
 $(document).ready(function() {
 
