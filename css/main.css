@@ -293,26 +293,22 @@ nav a:hover, nav a:active, nav a:focus {
   align-items: center;
 }
 
-.project h2 {
-  text-align: center;
-}
-
 /* [placeholder] */
-.placeholder-img {
+/*.placeholder-img {
   background-color: white;
   text-align: center;
   transition: 0.3s;
-}
+}*/
 
 /* [placeholder, for project list only] */
-#projects .placeholder-img:hover {
+/*#projects .placeholder-img:hover {
   filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
   cursor: pointer;
 
   -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
-}
+}*/
 
 /* about section ================================= */
 
