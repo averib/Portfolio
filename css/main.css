@@ -217,14 +217,8 @@ nav a:hover, nav a:active, nav a:focus {
 
 /* landing section =============================== */
 
-/* only for landing section navbar */
-#home-header nav {
-  background-color: white;
-}
-
 /* entire landing section */
 #intro {
-  background: linear-gradient(white, #484452);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -241,7 +235,7 @@ nav a:hover, nav a:active, nav a:focus {
 /* portfolio logo */
 #intro #ab-logo {
   width: 22%;
-  filter: drop-shadow(0.9rem 0.9rem 0.9rem #656565);
+  filter: drop-shadow(0.9rem 0.9rem 0.9rem #AFAFAF);
 }
 
 /* name */
@@ -256,9 +250,7 @@ nav a:hover, nav a:active, nav a:focus {
 #intro p {
   text-transform: uppercase;
   text-align: center;
-  color: #3C3C3C;
   font-size: 0.9rem;
-  margin-top: 2%;
 }
 
 /* project list section ========================== */
