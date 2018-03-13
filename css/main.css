@@ -60,9 +60,7 @@ html {
 
 body {
   font-family: DIN-Mitt, sans-serif;
-  background: linear-gradient(white, #D3D2D5);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: white;
 }
 
 h1 { 
@@ -267,24 +265,32 @@ nav a:hover, nav a:active, nav a:focus {
 
 #project1, #project2, #project3 {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 #project1 {
-  /* test bg image */
   background-image: url('../img/placeholder.png');
+  background-size: cover;
+  background-position: center;
 }
 
 #project2 {
-  /* test bg image */
-  background-image: url('../img/placeholder.png');
+  background-image: url('../img/visual-design-sketch.png');
+  background-size: 50%;
+  background-position: 15% center;
 }
 
 #project3 {
-  /* test bg image */
-  background-image: url('../img/placeholder.png');
+  background-image: url('../img/art-gallery-sketch.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#project3 .box-col1 {
+  /*background-image: url('../img/brush-stroke2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;*/
 }
 
 .project {
@@ -292,23 +298,6 @@ nav a:hover, nav a:active, nav a:focus {
   height: 100%;
   align-items: center;
 }
-
-/* [placeholder] */
-/*.placeholder-img {
-  background-color: white;
-  text-align: center;
-  transition: 0.3s;
-}*/
-
-/* [placeholder, for project list only] */
-/*#projects .placeholder-img:hover {
-  filter: drop-shadow(0.9rem 0.9rem 0.9rem #9F9F9F);
-  cursor: pointer;
-
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
-}*/
 
 /* about section ================================= */
 
