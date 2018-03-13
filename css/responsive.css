@@ -1,21 +1,23 @@
 
-/* 628px */
-@media (max-width: 39.25em) {
-    .box {
-        flex-direction: column;
-    }
+/* 768px */
+@media (max-width: 48em) {
+  .box {
+    flex-direction: column;
+  }
 
-    /* center the text in project list section */
-    .project h1, .project p {
-        text-align: center;
-    }
+  /* re-style and re-position all buttons */
+  .button {
+    display: block;
+    margin: auto;
+    width: 20rem;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
 
-    /* re-style and re-position all buttons */
-    .button {
-        display: block;
-        margin: auto;
-        width: 20rem;
-        padding: 1rem 2rem;
-        text-align: center;
-    }
+  /* project list section ========================== */
+
+  /* center the text in project list section */
+  .project h1, .project p {
+    text-align: center;
+  }
 }
