@@ -286,13 +286,6 @@ nav a:hover, nav a:active, nav a:focus {
   background-position: center;
 }
 
-#project3 .box-col1 {
-  /*background-image: url('../img/brush-stroke2.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;*/
-}
-
 .project {
   padding: 5% 6%;
   height: 100%;
