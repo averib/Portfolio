@@ -311,6 +311,10 @@ footer {
   text-align: center;
 }
 
+footer img {
+  padding: 0 1% 0 1%;
+}
+
 /* project page ================================== */
 
 #overview {
