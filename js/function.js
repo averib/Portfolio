@@ -23,7 +23,7 @@ $(window).on("scroll", function() {
 function projectInView() {
     // project 1
     if (isScrolledIntoView(document.getElementsByClassName('prj')[0])) {
-        $("#project1").css("background-image", "url('img/ab-logo-white.png')");
+        $("#project1").css("background-image", "url('img/wwm-app.png')");
     } else {
         $("#project1").css("background-image", "url('img/placeholder.png')");
     }
