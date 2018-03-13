@@ -1,14 +1,5 @@
 "use strict";
 
-/* 
-TO ADD LATER:
-- scroll up arrow that appears when user starts scrolling down on page
-        http://jsfiddle.net/robert/fjXSq/
-        https://stackoverflow.com/questions/5980237/show-back-to-top-link-element-using-jquery-when-you-scroll-down
-*/
-
-// ==================================================================
-
 // open ux/ui project page
 function openProjectUX() {
     window.location.href = "ux-ui-project.html";
@@ -19,7 +10,7 @@ $(window).on("scroll", function() {
     projectInView();
 });
 
-// change bg of project 1 section if scrolled into view
+// change bg of project section if scrolled into view
 function projectInView() {
     // project 1
     if (isScrolledIntoView(document.getElementsByClassName('prj')[0])) {
