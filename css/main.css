@@ -303,6 +303,13 @@ nav a:hover, nav a:active, nav a:focus {
   text-align: justify;
 }
 
+/* placeholder image */
+.test-img {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
 /* footer ======================================== */
 
 footer {
@@ -327,22 +334,31 @@ footer img {
   margin-bottom: 10%;
 }
 
-/* placeholder img */
-.test-img {
+.prj-img {
   display: block;
   margin: auto;
-  width: 20%;
+}
 
-  /* img fade-in */
-  animation: fadeIn 1s forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
+.img-full {
+  width: 100%;
+}
+
+.img-large {
+  width: 85%;
+}
+
+.img-auto {
+  width: auto;
 }
 
 .process {
   height: 100%;
   padding: 5% 6%;
   align-items: center; 
+}
+
+.process p {
+  text-align: justify;
 }
 
 /* contact page ================================== */
