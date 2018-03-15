@@ -354,10 +354,11 @@ footer a:hover {
 }
 
 /* image widths */
-.img-full {   width: 100%; }
-.img-large {  width: 85%; }
-.img-mid {    width: 70%; }
-.img-auto {   width: auto; }
+.img-auto   { width: auto; }
+.img-full   { width: 100%; }
+.img-large  { width: 85%; }
+.img-mid    { width: 70%; }
+.img-small  { width: 15%; }
 
 /* section */
 .process {
@@ -370,3 +371,9 @@ footer a:hover {
 .process p {
   text-align: justify;
 }
+
+/* final icons in visual design page */
+/*#icon-grid .box-col1 {
+  justify-content: space-between;
+}*/
+
