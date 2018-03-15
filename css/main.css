@@ -263,8 +263,8 @@ nav a:hover, nav a:active, nav a:focus {
 
 #project1 {
   background-image: url('../img/placeholder.png');
-  background-size: 50%;
-  background-position: 15% center;
+  background-size: 40%;
+  background-position: 25% center;
 }
 
 #project2 {
@@ -324,9 +324,10 @@ footer img {
 
 /* project page ================================== */
 
+/* for all projects */
 #overview {
   height: 85%;
-  margin: 0 6%;
+  padding: 0 6%;
   align-items: center;
 }
 
@@ -339,24 +340,20 @@ footer img {
   margin: auto;
 }
 
-.img-full {
-  width: 100%;
-}
+/* image widths */
+.img-full {   width: 100%; }
+.img-large {  width: 85%; }
+.img-mid {    width: 70%; }
+.img-auto {   width: auto; }
 
-.img-large {
-  width: 85%;
-}
-
-.img-auto {
-  width: auto;
-}
-
+/* section */
 .process {
   height: 100%;
   padding: 5% 6%;
   align-items: center; 
 }
 
+/* section paragraph text */
 .process p {
   text-align: justify;
 }

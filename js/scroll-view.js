@@ -22,8 +22,12 @@ function projectInView() {
     // if project 3 is in view
     if (isScrolledIntoView(document.getElementsByClassName('prj')[2])) {
         $("#project3").css("background-image", "url('img/art-gallery.png')");
+        $(".prj3-h1").css("color", "white");
+        $(".prj3-p").css("color", "#CCC");
     } else {
         $("#project3").css("background-image", "url('img/art-gallery-sketch.png')");
+        $(".prj3-h1").css("color", "#272727");
+        $(".prj3-p").css("color", "#878787");
     }
 }
 
