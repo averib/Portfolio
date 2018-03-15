@@ -357,15 +357,3 @@ footer img {
 .process p {
   text-align: justify;
 }
-
-/* contact page ================================== */
-
-.current {
-  color: #272727;
-}
-
-#contact {
-  height: 85%;
-  margin: 0 6%;
-  align-items: center;
-}
