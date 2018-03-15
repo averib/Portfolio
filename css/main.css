@@ -303,13 +303,6 @@ nav a:hover, nav a:active, nav a:focus {
   text-align: justify;
 }
 
-/* placeholder image */
-.test-img {
-  display: block;
-  margin: auto;
-  width: 20%;
-}
-
 /* footer ======================================== */
 
 footer {
@@ -376,4 +369,11 @@ footer a:hover {
 /*#icon-grid .box-col1 {
   justify-content: space-between;
 }*/
+
+/* placeholder image */
+.test-img {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
 

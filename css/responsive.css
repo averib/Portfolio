@@ -16,8 +16,34 @@
 
   /* project list section ========================== */
 
-  /* center the text in project list section */
   .project h1, .project p {
+    text-align: center;
+  }
+
+  #project1, #project2 {
+    background-position: center 20%;
+  }
+
+  /* about section ================================= */
+
+  #about {
+    height: 130%;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    text-align: center;
+  }
+
+  footer img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* project page ================================== */
+
+  #overview h1, #overview p, .process h2 {
     text-align: center;
   }
 }
