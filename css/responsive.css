@@ -5,6 +5,11 @@
     flex-direction: column;
   }
 
+  .box .box-col2 {
+    display: flex;
+    align-items: center;
+  }
+
   /* re-style and re-position all buttons */
   .button {
     display: block;
@@ -27,7 +32,11 @@
   /* about section ================================= */
 
   #about {
-    height: 130%;
+    height: 110%;
+  }
+
+  #about h1 {
+    text-align: center;
   }
 
   /* footer ======================================== */
