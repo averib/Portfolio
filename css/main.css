@@ -347,7 +347,6 @@ footer a:hover {
 }
 
 /* image widths */
-/*.img-auto   { width: auto; }*/
 .img-full   { width: 100%; }
 .img-xl     { width: 85%; }
 .img-large  { width: 70%; }
@@ -376,11 +375,4 @@ video {
 /*#icon-grid .box-col1 {
   justify-content: space-between;
 }*/
-
-/* placeholder image */
-.test-img {
-  display: block;
-  margin: auto;
-  width: 20%;
-}
 
