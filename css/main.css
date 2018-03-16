@@ -365,6 +365,12 @@ footer a:hover {
   text-align: justify;
 }
 
+video {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
 /* final icons in visual design page */
 /*#icon-grid .box-col1 {
   justify-content: space-between;
