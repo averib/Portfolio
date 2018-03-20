@@ -12,11 +12,15 @@ body, html {
   height: 100%;
 }
 
-/* text ========================================== */
+/* text ======================================================================== */
 
 body {
     font-family: DINPro-Regular, sans-serif;
     color: #d3d3d3;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 h1, h2 {
@@ -37,27 +41,39 @@ a:hover {
     text-decoration: none;
 }
 
-/* header (navbar) =============================== */
+/* header (navbar) ============================================================= */
 
 nav {
-  /*font-family: DIN-Eng;*/
-  padding: 3% 6%;
+  font-family: DINPro-Light;
+  padding: 2rem;
   text-align: center;
+  background-color: #484452;
 }
 
 nav a {
   margin: 0 4%;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #898989;
   transition: 0.3s;
+
+  border: 2px solid #484452;
 }
 
 nav a:hover, nav a:active, nav a:focus {
-  color: black;
+
 }
 
-/* project sections ============================== */
+/* about section =============================================================== */
+
+#about {
+    background: linear-gradient(#484452, #2E2A3A);
+    height: 85vh;
+    padding: 6%;
+}
+
+/* project sections ============================================================ */
 
 /* all sections */
 #ux-ui, #visual-design, #art-gallery {
@@ -66,17 +82,53 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 /* ux-ui section */
-#ux-ui               { background-color: #222; }
-#ux-ui h1            { color: #d3a21c; }
+#ux-ui {
+    background-color: #222;
+}
+
+#ux-ui h1 {
+    color: #d3a21c;
+}
 
 /* visual design section */
-#visual-design       { background-color: #bdf2f0; color: #898989; }
-#visual-design h1    { color: #51bbb6; }
+#visual-design {
+    background-color: #6DB9B5;
+    color: #898989;
+}
+
+#visual-design h1 {
+    color: #51bbb6;
+}
 
 /* art gallery section */
-#art-gallery         { background-color: #4b5363; color: white;}
+#art-gallery {
+    background-color: #242934;
+    color: white;
+}
 
-/* shadow boxes ================================== */
+/* angled edges ================================================================ */
+
+/* containers for 2-part angled edges to transition between sections */
+.angle-container-1   { background-color: #2E2A3A; }
+.angle-container-2   { background-color: #222; }
+.angle-container-3   { background-color: #6DB9B5; }
+
+/* angled edge */
+.angle {
+    display: block;
+    content: '';
+    height: 10vh;
+    transform: skewY(-2deg);
+    transform-origin: 100%;
+    z-index: 1;
+}
+
+/* angled edge colours */
+.angle-grey          { background-color: #222; }
+.angle-green         { background-color: #6DB9B5 }
+.angle-blue          { background-color: #242934; }
+
+/* shadow boxes ================================================================ */
 
 /* flexbox */
 .box {
@@ -92,22 +144,19 @@ nav a:hover, nav a:active, nav a:focus {
 
 #ux-ui-box {
     background-color: #1b1b1b;
-    border-bottom: solid 0.2rem #d3a21c;
     filter: drop-shadow(0rem 2rem 2rem black);
 }
 
 #visual-design-box {
     background-color: white;
-    border-bottom: solid 0.2rem #51bbb6;
-    filter: drop-shadow(0rem 2rem 2rem #5e9392);
+    filter: drop-shadow(0rem 2rem 2rem #316360);
 }
 
 #art-box {
     background-image: url("../img/art-gallery.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: solid 0.2rem #a99e9a;
-    filter: drop-shadow(0rem 2rem 2rem #3b414c);
+    filter: drop-shadow(0rem 2rem 2rem black);
 }
 
 /* columns */
@@ -135,25 +184,31 @@ nav a:hover, nav a:active, nav a:focus {
     text-align: right;
 }
 
-/* bottom borders ================================ */
+/* shadow box bottom borders =================================================== */
 
 .bottom-border {
     width: 100%;
-    height: 0.7rem;
+    height: 1rem;
 }
 
 #ux-ui-border            { background-color: #d3a21c; }
-#visual-design-border    { background-color: #51bbb6; }
+#visual-design-border    { background-color: white; }
 #art-border              { background-color: #a99e9a; }
 
-/* images ======================================== */
+/* images ====================================================================== */
+
+#about img {
+    display: block;
+    margin: auto;
+    width: 55%;
+}
 
 .shadow-box img {
     display: block;
     margin: auto;
     width: 83%;
 
-    animation: float;
+    /*animation: float;*/
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -169,7 +224,7 @@ nav a:hover, nav a:active, nav a:focus {
     100%  { padding-bottom: 0; }
 }
 
-/* buttons ======================================= */
+/* buttons ===================================================================== */
 
 .button {
     border-radius: 25px;
@@ -204,19 +259,10 @@ nav a:hover, nav a:active, nav a:focus {
     color: #2b2b2b;
 }
 
-/* transition gradients ========================== */
-
-/*.gradient {
-    height: 60vh;
-}
-
-#gradient-1     { background: linear-gradient(#222, #bdf2f0); }
-#gradient-2     { background: linear-gradient(#bdf2f0, #4b5363); }*/
-
-/* footer ======================================== */
+/* footer ====================================================================== */
 
 footer {
-  background-color: #272727;
+  background-color: #222;
   padding: 6rem 5rem;
 }
 

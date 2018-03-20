@@ -1,0 +1,40 @@
+
+/* 768px */
+@media (max-width: 48em) {
+
+  /* grid structure ================================ */
+  .box {
+    flex-direction: column;
+  }
+
+  /* contrain everything inside container */
+  .box .box-col2 {
+    display: flex;
+    align-items: center;
+  }
+
+  /* remove offset spacing to center everything */
+  .space-right {
+    margin: 3%;
+    padding: 1%;
+  }
+
+  .space-left {
+    margin: 3%;
+  }
+
+  /* center all content in .box-col1 */
+  .shadow-box .box-col1 {
+    text-align: center;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    text-align: center;
+  }
+
+  footer img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
