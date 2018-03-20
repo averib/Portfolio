@@ -61,13 +61,13 @@ a:hover {
 /* flexbox */
 .box {
     display: flex;
-    align-items: center;
 }
 
 /* container with dropshadow */
 .shadow-box {
     height: 100%;
     border-radius: 25px 25px 0 0;
+    align-items: center;
 }
 
 #ux-ui-box {
@@ -105,6 +105,11 @@ a:hover {
 /* adds left spacing to regular .box-col2 */
 .space-left {
     margin: 3% 3% 3% 6%;
+}
+
+/* aligns text & buttons to the right in shadow boxes */
+.shadow-box .box-col1 {
+    text-align: right;
 }
 
 /* images ======================================== */
