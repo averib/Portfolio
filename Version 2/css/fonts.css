@@ -1,0 +1,16 @@
+
+/* need to download .ttf and .woff (+ .woff2) versions of these fonts */
+
+@font-face {
+    font-family: 'DINPro-Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DINPro-Light.otf');
+}
+
+@font-face {
+    font-family: 'DINPro-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DINPro-Regular.otf');
+}
