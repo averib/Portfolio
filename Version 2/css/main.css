@@ -108,25 +108,25 @@ nav a:hover, nav a:active, nav a:focus {
 
 /* angled edges ================================================================ */
 
-/* containers for 2-part angled edges to transition between sections */
-.angle-container-1   { background-color: #2E2A3A; }
-.angle-container-2   { background-color: #222; }
-.angle-container-3   { background-color: #6DB9B5; }
-
-/* angled edge */
 .angle {
-    display: block;
-    content: '';
-    height: 10vh;
-    transform: skewY(-2deg);
-    transform-origin: 100%;
-    z-index: 1;
+    height: 25vh;
 }
 
-/* angled edge colours */
-.angle-grey          { background-color: #222; }
-.angle-green         { background-color: #6DB9B5 }
-.angle-blue          { background-color: #242934; }
+.purple-to-grey {
+    background: linear-gradient(177deg, #2E2A3A 50%, #222 50%);
+}
+
+.grey-to-green {
+    background: linear-gradient(3deg, #6db9b5 50%, #222 50%);
+}
+
+.green-to-blue {
+    background: linear-gradient(177deg, #6db9b5 50%, #242934 50%);
+}
+
+.blue-to-grey {
+    background: linear-gradient(3deg, #222 50%, #242934 50%);
+}
 
 /* shadow boxes ================================================================ */
 
