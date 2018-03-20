@@ -37,6 +37,26 @@ a:hover {
     text-decoration: none;
 }
 
+/* header (navbar) =============================== */
+
+nav {
+  /*font-family: DIN-Eng;*/
+  padding: 3% 6%;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  color: black;
+}
+
 /* project sections ============================== */
 
 /* all sections */
