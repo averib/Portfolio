@@ -70,7 +70,17 @@ nav img {
     padding: 6%;
 }
 
-#about .box-col1 img {
+#about .box-col1 {
+    align-self: flex-end;
+}
+
+#about h1 {
+    color: white;
+}
+
+#about img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -145,7 +155,7 @@ nav img {
 
 #ux-ui-box {
     background-color: #1b1b1b;
-    background: linear-gradient(45deg, #cca33e 50%, #222 50%);
+    background: linear-gradient(45deg, #161616 50%, #222 50%);
     filter: drop-shadow(0rem 2rem 2rem black);
 }
 
@@ -168,7 +178,7 @@ nav img {
     padding: 1%;
 }
 
-.box-col1   { flex: 1; }
+.box-col1   { flex: 1; align-self: center; }
 .box-col2   { flex: 2; }
 
 /* adds right spacing to .box-col1 */
@@ -199,12 +209,6 @@ nav img {
 #art-border              { background-color: #a99e9a; }
 
 /* images ====================================================================== */
-
-#about img {
-    display: block;
-    margin: auto;
-    width: 55%;
-}
 
 .shadow-box img {
     display: block;
@@ -266,7 +270,11 @@ nav img {
 
 footer {
   background-color: #222;
-  padding: 6rem 5rem;
+  padding: 0 5rem 6rem 5rem;
+}
+
+footer .box-col1 {
+    align-self: flex-start;
 }
 
 h4 {
