@@ -209,15 +209,15 @@ nav a:hover, nav a:active, nav a:focus {
     display: block;
     margin: auto;
     width: 83%;
+}
+
+#ux-ui-box img {
+    filter: drop-shadow(2rem 2rem 2rem black);
 
     /*animation: float;*/
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-}
-
-#ux-ui-box img {
-    filter: drop-shadow(2rem 2rem 2rem black);
 }
 
 @keyframes float {
