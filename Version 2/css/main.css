@@ -89,7 +89,8 @@ nav img {
 /* all sections */
 #ux-ui, #visual-design, #art-gallery {
     height: 100vh;
-    padding: 6%;
+    /*padding: 6%;*/
+    padding: 6% 8%;
 }
 
 /* ux-ui section */
