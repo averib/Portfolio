@@ -321,8 +321,8 @@ footer p {
   line-height: 2rem;
 }
 
-/* links */
-footer a:hover {
+/* navigation links */
+.link-highlight:hover {
     color: #222;
     padding: 0.1rem 1.5rem;
     border-radius: 20px;
