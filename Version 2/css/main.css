@@ -29,6 +29,10 @@ h1, h2 {
     letter-spacing: 5px;
 }
 
+p {
+    font-size: 0.95rem;
+}
+
 a {
     color: #d3d3d3;
     transition: 0.3s;
@@ -37,6 +41,11 @@ a {
 a:hover {
     color: white;
     text-decoration: none;
+}
+
+/* to emphasize text bits */
+.highlight {
+    color: #222;
 }
 
 /* header (navbar) ============================================================= */
@@ -95,18 +104,11 @@ nav img {
     color: white;
 }
 
-#about img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/* project sections ============================================================ */
+/* project listing ============================================================= */
 
 /* all sections */
 #ux-ui, #visual-design, #art-gallery {
     height: 100vh;
-    /*padding: 6%;*/
     padding: 6% 8%;
 }
 
@@ -157,6 +159,18 @@ nav img {
     background: linear-gradient(3deg, #222 50%, #242934 50%);
 }
 
+.grey-to-yellow {
+    background: linear-gradient(177deg, #222 50%, #d3a21c 50%);
+}
+
+.yellow-to-white {
+    background: linear-gradient(3deg, white 50%, #d3a21c 50%);
+}
+
+.white-to-grey {
+    background: linear-gradient(177deg, white 50%, #222 50%);
+}
+
 /* shadow boxes ================================================================ */
 
 /* flexbox */
@@ -164,9 +178,16 @@ nav img {
     display: flex;
 }
 
-/* container with dropshadow */
+/* container with dropshadow (for project list) */
 .shadow-box {
     height: 100%;
+    border-radius: 25px 25px 0 0;
+    align-items: center;
+}
+
+/* collapsed shadow box (for project pages) */
+.shadow-box-small {
+    height: 35%;
     border-radius: 25px 25px 0 0;
     align-items: center;
 }
@@ -174,7 +195,11 @@ nav img {
 #ux-ui-box {
     background-color: #1b1b1b;
     background: linear-gradient(45deg, #161616 50%, #222 50%);
-    filter: drop-shadow(0rem 2rem 2rem black);
+    filter: drop-shadow(0rem 2rem 2rem #0a0a0a);
+}
+
+#ux-ui-box img {
+    filter: drop-shadow(2rem 2rem 2rem black);
 }
 
 #visual-design-box {
@@ -211,12 +236,19 @@ nav img {
 }
 
 /* aligns text & buttons to the right in shadow boxes */
-.shadow-box .box-col1 {
+.shadow-box .box-col1, .shadow-box-small .box-col1 {
     text-align: right;
+}
+
+.shadow-box img {
+    display: block;
+    margin: auto;
+    width: 83%;
 }
 
 /* shadow box bottom borders =================================================== */
 
+/* for project list */
 .bottom-border {
     width: 100%;
     height: 1rem;
@@ -226,29 +258,6 @@ nav img {
 #ux-ui-border            { background-color: #d3a21c; }
 #visual-design-border    { background-color: white; }
 #art-border              { background-color: #a99e9a; }
-
-/* images ====================================================================== */
-
-.shadow-box img {
-    display: block;
-    margin: auto;
-    width: 83%;
-}
-
-#ux-ui-box img {
-    filter: drop-shadow(2rem 2rem 2rem black);
-
-    /*animation: float;*/
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes float {
-    0%    { padding-bottom: 0; }
-    50%   { padding-bottom: 2rem; }
-    100%  { padding-bottom: 0; }
-}
 
 /* buttons ===================================================================== */
 
@@ -283,6 +292,142 @@ nav img {
 .btn-light:hover {
     background-color: #d3d3d3;
     color: #2b2b2b;
+}
+
+#back-arrow img {
+    width: 1.5rem;
+}
+
+/*#down-arrow {
+    position: fixed;
+    left: 50%;
+    z-index: 10;
+    width: 2rem;
+    bottom: 2rem;
+
+    animation: float;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0%    { padding-bottom: 0; }
+    50%   { padding-bottom: 1rem; }
+    100%  { padding-bottom: 0; }
+}*/
+
+/* project pages =============================================================== */
+
+/* all project pages */
+#ux-ui-page, #visual-design-page, #art-gallery-page {
+    padding: 3% 8%;
+}
+
+/* for all project page overviews */
+.overview {
+    margin-top: 8%;
+}
+
+.overview .box-col1 {
+    align-self: flex-start;
+}
+
+/* section for each stage in process */
+.process {
+    height: 100vh;
+    padding: 8%;
+    color: #898989;
+}
+
+/* process images */
+.process img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+/* header of each process section */
+.process-header {
+    color: #222;
+}
+
+/* 1 column section (spans full width) */
+.full-span {
+    padding: 8%;
+    color: #898989;
+}
+
+.full-span img {
+    width: 100%;
+}
+
+.full-span h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.full-span p {
+    margin: auto;
+    max-width: 50%;
+}
+
+video {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* ux-ui page ------------------------------- */
+
+/* first section */
+#ux-ui-page {
+    background-color: #222;
+}
+
+/* project name */
+#ux-ui-page h1 {
+    color: #d3a21c;
+}
+
+/* project detail headers */
+#ux-ui-page h4 {
+    color: #d3a21c;
+}
+
+/* change navbar bg colour */
+#ux-ui-nav {
+    background-color: #222;
+}
+
+/* beginning of process */
+#ux-ui-process {
+    background-color: #d3a21c;
+    color: white;
+}
+
+#ux-ui-process img {
+    filter: drop-shadow(2rem 2rem 2rem #776333);
+}
+
+/* visual design page ----------------------- */
+
+/* first section */
+#visual-design-page {
+    background-color: #6DB9B5;
+    color: #898989;
+}
+
+#visual-design-page h1 {
+    color: #51bbb6;
+}
+
+/* art gallery page ------------------------- */
+
+/* first section */
+#art-gallery-page {
+    background-color: #242934;
+    color: white;
 }
 
 /* footer ====================================================================== */

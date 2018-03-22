@@ -29,6 +29,20 @@
     text-align: center;
   }
 
+  /* project pages ================================= */
+
+  .overview .box-col1 {
+    align-self: center;
+    text-align: center;
+  }
+
+  /* buttons ======================================= */
+
+  #back-arrow {
+    display: none;
+    visibility: hidden;
+  }
+
   /* footer ======================================== */
 
   footer {
