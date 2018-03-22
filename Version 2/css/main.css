@@ -43,21 +43,38 @@ a:hover {
 
 nav {
   font-family: DINPro-Light;
-  padding: 1.5rem;
   align-items: center;
   justify-content: center;
   background-color: #484452;
+  padding: 0 6%;
 }
 
-nav a {
-  margin: 0 4%;
+nav .box-col1, nav .box-col2 {
+    margin: 1rem 3%;
+}
+
+/* contains logo */
+nav .box-col2 {
+    flex: 0;
+}
+
+/* contains nav items */
+nav .box-col1 {
+    text-align: right;
+    justify-content: space-between;
+}
+
+/* nav items (text) */
+.nav-item {
+  margin-left: 4rem;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9rem;
-  color: #898989;
+  color: #d3d3d3;
   transition: 0.3s;
 }
 
+/* logo */
 nav img {
     width: 3rem;
 }
@@ -121,7 +138,7 @@ nav img {
 /* angled edges ================================================================ */
 
 .angle {
-    height: 50vh;
+    height: 30vh;
 }
 
 .purple-to-grey {
@@ -203,6 +220,7 @@ nav img {
 .bottom-border {
     width: 100%;
     height: 1rem;
+    border-radius: 0 0 25px 25px;
 }
 
 #ux-ui-border            { background-color: #d3a21c; }
@@ -272,26 +290,46 @@ nav img {
 footer {
   background-color: #222;
   padding: 0 5rem 6rem 5rem;
+  padding: 0 8% 6% 8%;
 }
 
 footer .box-col1 {
     align-self: flex-start;
+    text-align: center;
 }
 
+footer h2 {
+    margin: 2% 0;
+    text-align: center;
+    color: #cfa53f;
+}
+
+/* self portrait graphic */
+#self {
+    display: block;
+    margin: auto;
+    width: 16rem;
+}
+
+/* footer column headers */
 h4 {
-  color: #CCC;
+  color: white;
 }
 
+/* normal text */
 footer p {
   line-height: 2rem;
 }
 
-/* icons */
-footer img {
-  margin: 0.5rem 2rem 0.5rem 0;
+/* links */
+footer a:hover {
+    color: #222;
+    padding: 0.1rem 1.5rem;
+    border-radius: 20px;
+    background-color: white;
 }
 
-/* override <a> hover styling */
-footer a:hover {
-  color: #CCC;
+/* icons */
+footer img {
+  margin: 0.5rem;
 }

@@ -29,13 +29,6 @@
     text-align: center;
   }
 
-  /* header (navbar) =============================== */
-
-  /* place logo before nav items */
-  nav img           { order: 1; }
-  nav :nth-child(1) { order: 2; }
-  nav :nth-child(3) { order: 3; }
-
   /* footer ======================================== */
 
   footer {
