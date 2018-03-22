@@ -25,7 +25,13 @@
   }
 
   /* center all content in .box-col1 */
-  .shadow-box .box-col1 {
+  .shadow-box .box-col1, .shadow-box-small .box-col1 {
+    text-align: center;
+  }
+
+  /* text ========================================== */
+
+  h2 {
     text-align: center;
   }
 
@@ -34,6 +40,18 @@
   .overview .box-col1 {
     align-self: center;
     text-align: center;
+  }
+
+  .process {
+    height: 140vh;
+  }
+
+  .process .box-col1 {
+    flex: 0;
+  }
+
+  .full-span p {
+    max-width: 100%;
   }
 
   /* buttons ======================================= */

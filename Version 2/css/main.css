@@ -352,6 +352,17 @@ nav img {
     color: #222;
 }
 
+.process a {
+    color: #222;
+}
+
+.process a:hover {
+    background-color: #222;
+    color: white;
+    padding: 0.1rem 1.5rem;
+    border-radius: 20px;
+}
+
 /* 1 column section (spans full width) */
 .full-span {
     padding: 8%;
