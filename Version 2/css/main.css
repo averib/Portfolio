@@ -88,19 +88,19 @@ nav img {
     width: 3rem;
 }
 
-/* about section =============================================================== */
+/* main section ================================================================ */
 
-#about {
+#main {
     background: linear-gradient(#484452, #2E2A3A);
     height: 85vh;
     padding: 6%;
 }
 
-#about .box-col1 {
+#main .box-col1 {
     align-self: flex-end;
 }
 
-#about h1 {
+#main h1 {
     color: white;
 }
 
@@ -155,10 +155,6 @@ nav img {
     background: linear-gradient(177deg, #6db9b5 50%, #242934 50%);
 }
 
-.blue-to-grey {
-    background: linear-gradient(3deg, #222 50%, #242934 50%);
-}
-
 .grey-to-yellow {
     background: linear-gradient(177deg, #222 50%, #d3a21c 50%);
 }
@@ -169,6 +165,18 @@ nav img {
 
 .white-to-grey {
     background: linear-gradient(177deg, white 50%, #222 50%);
+}
+
+.green-to-silver {
+    background: linear-gradient(177deg, #6db9b5 50%, #f2f2f2 50%);
+}
+
+.silver-to-white {
+    background: linear-gradient(3deg, white 50%, #f2f2f2 50%);
+}
+
+.blue-to-purple {
+    background: linear-gradient(3deg, #484452 50%, #242934 50%);
 }
 
 /* shadow boxes ================================================================ */
@@ -316,6 +324,19 @@ nav img {
     50%   { padding-bottom: 1rem; }
     100%  { padding-bottom: 0; }
 }*/
+
+/* about section =============================================================== */
+
+#about {
+    height: 50vh;
+    background: linear-gradient(#484452, #2E2A3A);
+    padding: 6%;
+}
+
+/* overrides .full-span attributes used for project pages */
+#about.full-span {
+    color: #d3d3d3;
+}
 
 /* project pages =============================================================== */
 
