@@ -1,0 +1,535 @@
+
+/* CSS properties for the portfolio website & branding
+
+**************************************************************************************************/
+
+/* all properties */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* text ======================================================================== */
+
+body {
+    font-family: DINPro-Light, sans-serif;
+    color: #d3d3d3;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+a {
+    color: #d3d3d3;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* to emphasize text bits */
+.highlight {
+    color: #222;
+}
+
+/* header (navbar) ============================================================= */
+
+nav {
+  font-family: DINPro-Light;
+  align-items: center;
+  justify-content: center;
+  background-color: #484452;
+  padding: 0 6%;
+}
+
+nav .box-col1, nav .box-col2 {
+    margin: 1rem 3%;
+}
+
+/* contains logo */
+nav .box-col2 {
+    flex: 0;
+}
+
+/* contains nav items */
+nav .box-col1 {
+    text-align: right;
+    justify-content: space-between;
+}
+
+/* nav items (text) */
+.nav-item {
+  margin-left: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #d3d3d3;
+  transition: 0.3s;
+}
+
+/* logo */
+nav img {
+    width: 3rem;
+}
+
+/* main section ================================================================ */
+
+#main {
+    background: linear-gradient(#484452, #2E2A3A);
+    height: 85vh;
+    padding: 6%;
+}
+
+#main .box-col1 {
+    align-self: flex-end;
+}
+
+#main h1 {
+    color: white;
+}
+
+/* project listing ============================================================= */
+
+/* all sections */
+#ux-ui, #visual-design, #art-gallery {
+    height: 100vh;
+    padding: 6% 8%;
+}
+
+/* ux-ui section */
+#ux-ui {
+    background-color: #222;
+}
+
+#ux-ui h1 {
+    color: #d3a21c;
+}
+
+/* visual design section */
+#visual-design {
+    background-color: #6DB9B5;
+    color: #898989;
+}
+
+#visual-design h1 {
+    color: #51bbb6;
+}
+
+/* art gallery section */
+#art-gallery {
+    background-color: #242934;
+    color: white;
+}
+
+/* angled edges ================================================================ */
+
+.angle {
+    height: 30vh;
+}
+
+.purple-to-grey {
+    background: linear-gradient(177deg, #2E2A3A 50%, #222 50%);
+}
+
+.grey-to-green {
+    background: linear-gradient(3deg, #6db9b5 50%, #222 50%);
+}
+
+.green-to-blue {
+    background: linear-gradient(177deg, #6db9b5 50%, #242934 50%);
+}
+
+.grey-to-yellow {
+    background: linear-gradient(177deg, #222 50%, #d3a21c 50%);
+}
+
+.yellow-to-white {
+    background: linear-gradient(3deg, white 50%, #d3a21c 50%);
+}
+
+.white-to-grey {
+    background: linear-gradient(177deg, white 50%, #222 50%);
+}
+
+.green-to-silver {
+    background: linear-gradient(177deg, #6db9b5 50%, #f2f2f2 50%);
+}
+
+.silver-to-white {
+    background: linear-gradient(3deg, white 50%, #f2f2f2 50%);
+}
+
+.blue-to-purple {
+    background: linear-gradient(3deg, #484452 50%, #242934 50%);
+}
+
+/* shadow boxes ================================================================ */
+
+/* flexbox */
+.box {
+    display: flex;
+}
+
+/* container with dropshadow (for project list) */
+.shadow-box {
+    height: 100%;
+    border-radius: 25px 25px 0 0;
+    align-items: center;
+}
+
+/* collapsed shadow box (for project pages) */
+.shadow-box-small {
+    height: 35%;
+    border-radius: 25px 25px 0 0;
+    align-items: center;
+}
+
+#ux-ui-box {
+    background-color: #1b1b1b;
+    background: linear-gradient(45deg, #161616 50%, #222 50%);
+    filter: drop-shadow(0rem 2rem 2rem #0a0a0a);
+}
+
+#ux-ui-box img {
+    filter: drop-shadow(2rem 2rem 2rem black);
+}
+
+#visual-design-box {
+    background-color: white;
+    background: linear-gradient(45deg, #f2f2f2 50%, white 50%);
+    filter: drop-shadow(0rem 2rem 2rem #316360);
+}
+
+#art-box {
+    background-image: url("../img/art-gallery.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0rem 2rem 2rem black);
+}
+
+/* columns */
+.box-col1, .box-col2 {
+    margin: 3%;
+    padding: 1%;
+    align-self: center;
+}
+
+.box-col1   { flex: 1; }
+.box-col2   { flex: 2; }
+
+/* adds right spacing to .box-col1 */
+.space-right {
+    margin: 3% 6% 3% 3%;
+    padding: 1% 3% 1% 1%;
+}
+
+/* adds left spacing to regular .box-col2 */
+.space-left {
+    margin: 3% 3% 3% 6%;
+}
+
+/* aligns text & buttons to the right in shadow boxes */
+.shadow-box .box-col1, .shadow-box-small .box-col1 {
+    text-align: right;
+}
+
+.shadow-box img {
+    display: block;
+    margin: auto;
+    width: 83%;
+}
+
+/* shadow box bottom borders =================================================== */
+
+/* for project list */
+.bottom-border {
+    width: 100%;
+    height: 1rem;
+    border-radius: 0 0 25px 25px;
+}
+
+#ux-ui-border            { background-color: #d3a21c; }
+#visual-design-border    { background-color: white; }
+#art-border              { background-color: #a99e9a; }
+
+/* buttons ===================================================================== */
+
+.button {
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-spacing {
+    margin: 5rem 0;
+}
+
+.btn-dark {
+    border: 2px solid #898989;
+    color: #898989;
+}
+
+.btn-dark:hover {
+    background-color: #898989;
+    color: white;
+}
+
+.btn-light {
+    border: 2px solid #d3d3d3;
+    color: #d3d3d3;
+}
+
+.btn-light:hover {
+    background-color: #d3d3d3;
+    color: #2b2b2b;
+}
+
+#back-arrow img {
+    width: 1.5rem;
+}
+
+/*#down-arrow {
+    position: fixed;
+    left: 50%;
+    z-index: 10;
+    width: 2rem;
+    bottom: 2rem;
+
+    animation: float;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0%    { padding-bottom: 0; }
+    50%   { padding-bottom: 1rem; }
+    100%  { padding-bottom: 0; }
+}*/
+
+/* about section =============================================================== */
+
+#about {
+    height: 50vh;
+    background: linear-gradient(#484452, #2E2A3A);
+    padding: 6%;
+}
+
+/* overrides .full-span attributes used for project pages */
+#about.full-span {
+    color: #d3d3d3;
+}
+
+/* project pages =============================================================== */
+
+/* all project pages */
+#ux-ui-page, #visual-design-page, #art-gallery-page {
+    padding: 3% 8%;
+}
+
+/* for all project page overviews */
+.overview {
+    margin-top: 8%;
+}
+
+.overview .box-col1 {
+    align-self: flex-start;
+}
+
+/* section for each stage in process */
+.process {
+    height: 100vh;
+    padding: 8%;
+    color: #898989;
+}
+
+/* process images */
+.process img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+/* header of each process section */
+.process-header {
+    color: #222;
+}
+
+.process a {
+    color: #222;
+}
+
+.process a:hover {
+    background-color: #222;
+    color: white;
+    padding: 0.1rem 1.5rem;
+    border-radius: 20px;
+}
+
+/* 1 column section (spans full width) */
+.full-span {
+    padding: 8%;
+    color: #898989;
+}
+
+.full-span img {
+    width: 100%;
+}
+
+.full-span h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.full-span p {
+    margin: auto;
+    max-width: 50%;
+}
+
+video {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* ux-ui page ------------------------------- */
+
+/* first section */
+#ux-ui-page {
+    background-color: #222;
+}
+
+/* project name */
+#ux-ui-page h1 {
+    color: #d3a21c;
+}
+
+/* project detail headers */
+#ux-ui-page h4 {
+    color: #d3a21c;
+}
+
+/* change navbar bg colour */
+#ux-ui-nav {
+    background-color: #222;
+}
+
+/* beginning of process */
+#ux-ui-process {
+    background-color: #d3a21c;
+    color: white;
+}
+
+#ux-ui-process img {
+    filter: drop-shadow(2rem 2rem 2rem #776333);
+}
+
+/* visual design page ----------------------- */
+
+/* first section */
+#visual-design-page {
+    background-color: #6DB9B5;
+    color: #898989;
+}
+
+/* project name */
+#visual-design-page h1 {
+    color: #51bbb6;
+}
+
+#visual-design-page .overview p {
+    color: #f2f2f2;
+}
+
+/* change navbar bg colour */
+#visual-design-nav {
+    background-color: #6DB9B5;
+}
+
+#visual-design-nav .nav-item {
+    color: #f2f2f2;
+}
+
+/* beginning of process */
+#visual-design-process {
+    background-color: #f2f2f2;
+}
+
+.grid img {
+    width: 20%;
+}
+
+/* art gallery page ------------------------- */
+
+/* first section */
+#art-gallery-page {
+    background-color: #242934;
+    color: white;
+}
+
+/* footer ====================================================================== */
+
+footer {
+  background-color: #222;
+  padding: 0 5rem 6rem 5rem;
+  padding: 0 8% 6% 8%;
+}
+
+footer .box-col1 {
+    align-self: flex-start;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 2% 0;
+    text-align: center;
+    color: #cfa53f;
+}
+
+/* self portrait graphic */
+#self {
+    display: block;
+    margin: auto;
+    width: 16rem;
+}
+
+/* footer column headers */
+h4 {
+  color: white;
+}
+
+/* normal text */
+footer p {
+  line-height: 2rem;
+}
+
+/* navigation links */
+.link-highlight:hover {
+    color: #222;
+    padding: 0.1rem 1.5rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* icons */
+footer img {
+  margin: 0.5rem;
+}

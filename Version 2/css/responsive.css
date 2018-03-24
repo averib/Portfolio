@@ -1,0 +1,98 @@
+
+/* 768px */
+@media (max-width: 48em) {
+
+  /* grid structure ================================ */
+
+  .box {
+    flex-direction: column;
+  }
+
+  /* contrain everything inside container */
+  .box .box-col2 {
+    display: flex;
+    align-items: center;
+  }
+
+  /* remove offset spacing to center everything */
+  .space-right {
+    margin: 3%;
+    padding: 1%;
+  }
+
+  .space-left {
+    margin: 3%;
+  }
+
+  /* center all content in .box-col1 */
+  .shadow-box .box-col1, .shadow-box-small .box-col1 {
+    text-align: center;
+  }
+
+  /* nav =========================================== */
+
+  nav.box {
+    flex-direction: column;
+  }
+
+  nav .box-col1 {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0 2%;
+  }
+
+  /* text ========================================== */
+
+  h2 {
+    text-align: center;
+  }
+
+  /* landing section =============================== */
+
+  #main .box-col1 {
+    align-self: center;
+    text-align: center;
+  }
+
+  /* project pages ================================= */
+
+  .overview .box-col1 {
+    align-self: center;
+    text-align: center;
+  }
+
+  .process {
+    height: 140vh;
+  }
+
+  .process .box-col1 {
+    flex: 0;
+  }
+
+  .full-span p {
+    max-width: 100%;
+  }
+
+  /* buttons ======================================= */
+
+  #back-arrow {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    text-align: center;
+  }
+
+  footer .box-col1 {
+    align-self: center;
+}
+
+  footer img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
