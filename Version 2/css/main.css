@@ -226,9 +226,10 @@ nav img {
 .box-col1, .box-col2 {
     margin: 3%;
     padding: 1%;
+    align-self: center;
 }
 
-.box-col1   { flex: 1; align-self: center; }
+.box-col1   { flex: 1; }
 .box-col2   { flex: 2; }
 
 /* adds right spacing to .box-col1 */
@@ -449,8 +450,31 @@ video {
     color: #898989;
 }
 
+/* project name */
 #visual-design-page h1 {
     color: #51bbb6;
+}
+
+#visual-design-page .overview p {
+    color: #f2f2f2;
+}
+
+/* change navbar bg colour */
+#visual-design-nav {
+    background-color: #6DB9B5;
+}
+
+#visual-design-nav .nav-item {
+    color: #f2f2f2;
+}
+
+/* beginning of process */
+#visual-design-process {
+    background-color: #f2f2f2;
+}
+
+.grid img {
+    width: 20%;
 }
 
 /* art gallery page ------------------------- */

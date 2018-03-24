@@ -29,9 +29,30 @@
     text-align: center;
   }
 
+  /* nav =========================================== */
+
+  nav.box {
+    flex-direction: column;
+  }
+
+  nav .box-col1 {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0 2%;
+  }
+
   /* text ========================================== */
 
   h2 {
+    text-align: center;
+  }
+
+  /* landing section =============================== */
+
+  #main .box-col1 {
+    align-self: center;
     text-align: center;
   }
 
