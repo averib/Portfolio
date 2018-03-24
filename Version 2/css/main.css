@@ -15,7 +15,7 @@ body, html {
 /* text ======================================================================== */
 
 body {
-    font-family: DINPro-Regular, sans-serif;
+    font-family: DINPro-Light, sans-serif;
     color: #d3d3d3;
 }
 
@@ -24,7 +24,6 @@ h1 {
 }
 
 h1, h2 {
-    font-family: DINPro-Light, sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
