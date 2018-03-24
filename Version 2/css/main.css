@@ -5,11 +5,11 @@
 
 /* all properties */
 *, *::after, *::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body, html {
-  height: 100%;
+    height: 100%;
 }
 
 /* text ======================================================================== */
@@ -50,11 +50,11 @@ a:hover {
 /* header (navbar) ============================================================= */
 
 nav {
-  font-family: DINPro-Light;
-  align-items: center;
-  justify-content: center;
-  background-color: #484452;
-  padding: 0 6%;
+    font-family: DINPro-Light;
+    align-items: center;
+    justify-content: center;
+    background-color: #484452;
+    padding: 0 6%;
 }
 
 nav .box-col1, nav .box-col2 {
@@ -74,12 +74,12 @@ nav .box-col1 {
 
 /* nav items (text) */
 .nav-item {
-  margin-left: 4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  color: #d3d3d3;
-  transition: 0.3s;
+    margin-left: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #d3d3d3;
+    transition: 0.3s;
 }
 
 /* logo */
@@ -328,7 +328,7 @@ nav img {
 /* about section =============================================================== */
 
 #about {
-    height: 50vh;
+    height: 60vh;
     background: linear-gradient(#484452, #2E2A3A);
     padding: 6%;
 }
@@ -391,7 +391,9 @@ nav img {
 }
 
 .full-span img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 80%;
 }
 
 .full-span h2 {
@@ -488,9 +490,9 @@ video {
 /* footer ====================================================================== */
 
 footer {
-  background-color: #222;
-  padding: 0 5rem 6rem 5rem;
-  padding: 0 8% 6% 8%;
+    background-color: #222;
+    padding: 0 5rem 6rem 5rem;
+    padding: 0 8% 6% 8%;
 }
 
 footer .box-col1 {
@@ -513,12 +515,12 @@ footer h2 {
 
 /* footer column headers */
 h4 {
-  color: white;
+    color: white;
 }
 
 /* normal text */
 footer p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 /* navigation links */
@@ -531,5 +533,5 @@ footer p {
 
 /* icons */
 footer img {
-  margin: 0.5rem;
+    margin: 0.5rem;
 }
