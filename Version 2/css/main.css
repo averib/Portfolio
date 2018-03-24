@@ -63,6 +63,8 @@ nav .box-col1, nav .box-col2 {
 
 /* contains logo */
 nav .box-col2 {
+    -webkit-flex: 0;
+    -ms-flex: 0;
     flex: 0;
 }
 
@@ -96,6 +98,8 @@ nav img {
 }
 
 #main .box-col1 {
+    -webkit-align-self: flex-end;
+    -ms-align-self: flex-end;
     align-self: flex-end;
 }
 
@@ -182,6 +186,8 @@ nav img {
 
 /* flexbox */
 .box {
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
 }
 
@@ -233,8 +239,17 @@ nav img {
     align-self: center;
 }
 
-.box-col1   { flex: 1; }
-.box-col2   { flex: 2; }
+.box-col1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.box-col2 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
 
 /* adds right spacing to .box-col1 */
 .space-right {
@@ -355,6 +370,8 @@ nav img {
 }
 
 .overview .box-col1 {
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
     align-self: flex-start;
 }
 
@@ -501,6 +518,8 @@ footer {
 }
 
 footer .box-col1 {
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
     align-self: flex-start;
     text-align: center;
 }

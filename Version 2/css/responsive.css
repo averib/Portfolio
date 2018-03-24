@@ -5,11 +5,15 @@
   /* grid structure ================================ */
 
   .box {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
   /* contrain everything inside container */
   .box .box-col2 {
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
     align-items: center;
   }
@@ -32,6 +36,8 @@
   /* nav =========================================== */
 
   nav.box {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -68,6 +74,8 @@
   }
 
   .process .box-col1 {
+    -webkit-flex: 0;
+    -ms-flex: 0;
     flex: 0;
   }
 

@@ -45,6 +45,8 @@
 }
 
 #guide-content .box-col1 {
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
     align-self: flex-start;
 }
 
