@@ -1,0 +1,175 @@
+
+/* CSS properties only for the style guide and citations page
+
+**************************************************************************************************/
+
+/* header ====================================================================== */
+
+#guide-header {
+    background: linear-gradient(#484452, #2E2A3A);
+    padding: 3% 6%;
+    height: 30vh;
+}
+
+#guide-header #ab-logo {
+    display: block;
+    margin: auto;
+    width: 7%;
+}
+
+#guide-header h1 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* overwrite nav styling from main.css */
+#guide-nav {
+    background-color: transparent;
+    margin: 3rem;
+}
+
+#guide-nav .nav-item {
+    margin: 0 3rem;
+}
+
+.purple-to-white {
+    background: linear-gradient(177deg, #2E2A3A 50%, white 50%);
+}
+
+/* style guide ================================================================= */
+
+#guide-content {
+    padding: 0 8%;
+    color: #898989;
+}
+
+#guide-content .box-col1 {
+    align-self: flex-start;
+}
+
+/* add spacing to the bottom of each section */
+#guide-content section {
+  padding-top: 1.5%;
+  margin-bottom: 7%;
+}
+
+/* section headers */
+#guide-content h2 {
+  text-align: center;
+  color: #222;
+}
+
+/* separator lines */
+#guide-content .rendered-h3::after {
+  display: block;
+  content: '';
+  width: 100%;
+  border-top: 1px solid #C9C9C9;
+  margin: 2% 0 5% 0;
+}
+
+/* rendered element section column */
+.rendered h2 {
+  text-align: left !important;
+}
+
+.code {
+  border: 1px solid #C9C9C9;
+  padding: 3%;
+}
+
+.guide-link {
+    color: #222;
+}
+
+.guide-link:hover {
+    background-color: #222;
+    color: white;
+    padding: 0.1rem 1.5rem;
+    border-radius: 20px;
+}
+
+code {
+  font-family: monospace;
+  color: #878787;
+}
+
+/* grid structure */
+.grid-display p {
+  background-color: white;
+}
+
+/* controls the spacing between grid elements */
+.grid-display .box-col1, .grid-display .box-col2 {
+  margin: 0.3rem;
+}
+
+/* make columns in grid display taller */
+.col-height {
+  padding-bottom: 15%;
+}
+
+/* colour swatches */
+#swatches {
+  text-align: center;
+}
+
+#swatches p {
+  padding: 5rem 0;
+}
+
+#swatches .box-col1 {
+    margin: 3% 0;
+}
+
+.white        { background-color: white; }
+.sw2          { background-color: #D3D3D3; }
+.sw3          { background-color: #898989; color: white; }
+.sw4          { background-color: #CFA53F; color: white; }
+.sw5          { background-color: #6DB9B5; color: white; }
+.sw6          { background-color: #484452; }
+.sw7          { background-color: #2E2A3A; }
+.sw8 { background-color: #242934; }
+.sw9 { background-color: #222222; }
+
+/*.grey-light   { background-color: #CCC; }
+.grey         { background-color: #878787; color: #CCC; }
+.purple-light { background-color: #8B8991; color: #CCC; }
+.purple       { background-color: #484452; }
+.purple-dark  { background-color: #2E2A3A; }
+.grey-dark    { background-color: #272727; }*/
+
+
+/* lists */
+ul, ol {
+    line-height: 2.5rem;
+}
+
+/* text input field */
+label {
+  display: block;
+  color: #222;
+}
+
+input {
+  margin: 0.7rem 0 2rem 0;
+  padding: 0.7rem;
+  width: 70%;
+  color: #d3d3d3;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+
+#display-nav {
+    padding: 3% 6%;
+    text-transform: uppercase;
+    background: linear-gradient(#484452, #2E2A3A);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#display-nav a {
+    padding: 2rem;
+    text-decoration: none;
+}
