@@ -1,5 +1,5 @@
 
-/* 768px */
+/* 768px **********************************************************************************************/
 @media (max-width: 48em) {
 
   /* grid structure ================================ */
@@ -59,7 +59,21 @@
 
   #main .box-col1 {
     align-self: center;
-    text-align: center;
+  }
+
+  /* project list ================================== */
+
+  .box-col1.space-right {
+    z-index: 10;
+    width: 100%;
+  }
+
+  #ux-ui .box-col1 {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  #visual-design .box-col1 {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   /* project pages ================================= */
@@ -105,3 +119,23 @@
     margin-right: 1rem;
   }
 }
+
+/* 425px **********************************************************************************************/
+
+@media (max-width: 26.563em) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  /* project list ================================== */
+
+  #ux-ui .box-col1 {
+    background-color: transparent;
+  }
+
+  #visual-design .box-col1 {
+    background-color: transparent;
+  }
+}
+
