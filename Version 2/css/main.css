@@ -182,6 +182,10 @@ nav img {
     background: linear-gradient(3deg, #484452 50%, #242934 50%);
 }
 
+.blue-to-grey {
+    background: linear-gradient(177deg, #242934 50%, #222 50%);
+}
+
 /* shadow boxes ================================================================ */
 
 /* flexbox */
@@ -360,7 +364,7 @@ nav img {
 /* project pages =============================================================== */
 
 /* all project pages */
-#ux-ui-page, #visual-design-page, #art-gallery-page {
+#ux-ui-page, #visual-design-page, #gallery-page {
     padding: 3% 8%;
 }
 
@@ -504,9 +508,33 @@ video {
 /* art gallery page ------------------------- */
 
 /* first section */
-#art-gallery-page {
+#gallery-page {
     background-color: #242934;
     color: white;
+}
+
+/* change navbar bg colour */
+#gallery-nav {
+    background-color: #242934;
+}
+
+/* custom shadow box for this page */
+#art-box.shadow-box-small {
+    background: linear-gradient(#566B87, #797C82);
+}
+
+#art-display {
+    background-color: #242934;
+}
+
+#art-display img {
+    display: block;
+    width: 100%;
+}
+
+.gallery-return-btn {
+    margin-top: 5rem;
+    text-align: center;
 }
 
 /* footer ====================================================================== */
