@@ -121,7 +121,7 @@
 
   /* buttons ======================================= */
 
-  #back-arrow {
+  #back-arrow-container {
     display: none;
     visibility: hidden;
   }
