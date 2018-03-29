@@ -1,5 +1,6 @@
 
 /* 768px **********************************************************************************************/
+
 @media (max-width: 48em) {
 
   /* grid structure ================================ */
@@ -41,12 +42,22 @@
     flex-direction: column;
   }
 
-  nav .box-col1 {
-    text-align: center;
+  /* make logo bigger */
+  nav img {
+      width: 5rem;
   }
 
-  .nav-item {
-    margin: 0 2%;
+  /* hide menu items */
+  nav .box-col1 a {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* make hamburger menu visible */
+  .hamburger {
+    display: block;
+    visibility: visible;
+    width: 3rem;
   }
 
   /* text ========================================== */
@@ -73,7 +84,7 @@
   }
 
   #visual-design .box-col1 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   /* project pages ================================= */
