@@ -71,6 +71,10 @@
 
   /* landing section =============================== */
 
+  #main {
+    text-align: center;
+  }
+
   #main .box-col1 {
     align-self: center;
   }
