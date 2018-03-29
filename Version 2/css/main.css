@@ -502,8 +502,27 @@ video {
     background-color: #f2f2f2;
 }
 
-.grid img {
+/* final icons */
+.box-grid {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.row img {
+    display: inline;
     width: 20%;
+    margin: 5%;
+}
+
+.row img:hover {
+    cursor: pointer;
 }
 
 /* art gallery page ------------------------- */
