@@ -3,6 +3,10 @@
 
 @media (max-width: 48em) {
 
+  .angle {
+    height: 15vh;
+  }
+
   /* grid structure ================================ */
 
   .box {
@@ -74,7 +78,6 @@
   /* project list ================================== */
 
   .box-col1.space-right {
-    z-index: 10;
     width: 100%;
   }
 
@@ -93,18 +96,23 @@
     text-align: center;
   }
 
-  .process {
-    height: 140vh;
-  }
-
   .process .box-col1 {
     -webkit-flex: 0;
     -ms-flex: 0;
     flex: 0;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .full-span p {
     max-width: 100%;
+  }
+
+  #ux-ui-process .box-col1 {
+    background-color: rgba(207, 165, 62, 0.8);
+  }
+
+  #visual-design-process .box-col1 {
+    background-color: transparent;
   }
 
   /* buttons ======================================= */
@@ -138,13 +146,21 @@
     font-size: 1.8rem;
   }
 
+  .angle {
+    height: 10vh;
+  }
+
   /* project list ================================== */
 
-  #ux-ui .box-col1 {
+  #ux-ui .box-col1,
+  #visual-design .box-col1 {
     background-color: transparent;
   }
 
-  #visual-design .box-col1 {
+  /* project pages ================================= */
+
+  .process .box-col1,
+  #ux-ui-process .box-col1 {
     background-color: transparent;
   }
 }
