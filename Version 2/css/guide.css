@@ -126,22 +126,14 @@ code {
 }
 
 .white        { background-color: white; }
-.sw2          { background-color: #D3D3D3; }
-.sw3          { background-color: #898989; color: white; }
-.sw4          { background-color: #CFA53F; color: white; }
-.sw5          { background-color: #6DB9B5; color: white; }
-.sw6          { background-color: #484452; }
-.sw7          { background-color: #2E2A3A; }
-.sw8 { background-color: #242934; }
-.sw9 { background-color: #222222; }
-
-/*.grey-light   { background-color: #CCC; }
-.grey         { background-color: #878787; color: #CCC; }
-.purple-light { background-color: #8B8991; color: #CCC; }
+.light-grey   { background-color: #D3D3D3; }
+.grey         { background-color: #898989; color: white; }
+.yellow       { background-color: #CFA53F; color: white; }
+.green        { background-color: #6DB9B5; color: white; }
 .purple       { background-color: #484452; }
-.purple-dark  { background-color: #2E2A3A; }
-.grey-dark    { background-color: #272727; }*/
-
+.dark-purple  { background-color: #2E2A3A; }
+.blue         { background-color: #242934; }
+.dark-grey    { background-color: #222222; }
 
 /* lists */
 ul, ol {
