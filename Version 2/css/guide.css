@@ -167,3 +167,7 @@ input {
     padding: 2rem;
     text-decoration: none;
 }
+
+#display-nav a:hover {
+  color: #cfa53f;
+}
