@@ -330,7 +330,7 @@ nav img {
     width: 1.5rem;
 }
 
-/*#down-arrow {
+#down-arrow {
     position: fixed;
     left: 50%;
     z-index: 10;
@@ -347,7 +347,7 @@ nav img {
     0%    { padding-bottom: 0; }
     50%   { padding-bottom: 1rem; }
     100%  { padding-bottom: 0; }
-}*/
+}
 
 /* about section =============================================================== */
 
