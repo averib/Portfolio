@@ -126,6 +126,11 @@
     visibility: hidden;
   }
 
+  #down-arrow {
+    display: none;
+    visibility: hidden;
+  }
+
   /* footer ======================================== */
 
   footer {
