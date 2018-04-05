@@ -28,10 +28,6 @@ h1, h2 {
     letter-spacing: 5px;
 }
 
-p {
-    font-size: 0.95rem;
-}
-
 a {
     color: #d3d3d3;
     transition: 0.3s;
