@@ -27,10 +27,14 @@
 #guide-nav {
     background-color: transparent;
     margin: 3rem;
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
+    align-items: flex-start;
 }
 
 #guide-nav .nav-item {
     margin: 0 3rem;
+    text-align: center;
 }
 
 .purple-to-white {
