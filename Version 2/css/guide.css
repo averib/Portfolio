@@ -56,33 +56,33 @@
 
 /* add spacing to the bottom of each section */
 #guide-content section, #cite-content section {
-  padding-top: 1.5%;
-  margin-bottom: 7%;
+    padding-top: 1.5%;
+    margin-bottom: 7%;
 }
 
 /* section headers */
 #guide-content h2, #cite-content h2 {
-  text-align: center;
-  color: #222;
+    text-align: center;
+    color: #222;
 }
 
 /* separator lines */
 #guide-content .rendered-h3::after, #cite-content .rendered-h3::after {
-  display: block;
-  content: '';
-  width: 100%;
-  border-top: 1px solid #C9C9C9;
-  margin: 2% 0 5% 0;
+    display: block;
+    content: '';
+    width: 100%;
+    border-top: 1px solid #C9C9C9;
+    margin: 2% 0 5% 0;
 }
 
 /* rendered element section column */
 .rendered h2 {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 .code {
-  border: 1px solid #C9C9C9;
-  padding: 3%;
+    border: 1px solid #C9C9C9;
+    padding: 3%;
 }
 
 .guide-link, .cite-link {
@@ -97,32 +97,32 @@
 }
 
 code {
-  font-family: monospace;
-  color: #878787;
+    font-family: monospace;
+    color: #878787;
 }
 
 /* grid structure */
 .grid-display p {
-  background-color: white;
+    background-color: white;
 }
 
 /* controls the spacing between grid elements */
 .grid-display .box-col1, .grid-display .box-col2 {
-  margin: 0.3rem;
+    margin: 0.3rem;
 }
 
 /* make columns in grid display taller */
 .col-height {
-  padding-bottom: 15%;
+    padding-bottom: 15%;
 }
 
 /* colour swatches */
 #swatches {
-  text-align: center;
+    text-align: center;
 }
 
 #swatches p {
-  padding: 5rem 0;
+    padding: 5rem 0;
 }
 
 #swatches .box-col1 {
@@ -146,17 +146,17 @@ ul, ol {
 
 /* text input field */
 label {
-  display: block;
-  color: #222;
+    display: block;
+    color: #222;
 }
 
 input {
-  margin: 0.7rem 0 2rem 0;
-  padding: 0.7rem;
-  width: 70%;
-  color: #d3d3d3;
-  border-radius: 5px;
-  border: 1px solid #d3d3d3;
+    margin: 0.7rem 0 2rem 0;
+    padding: 0.7rem;
+    width: 70%;
+    color: #d3d3d3;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
 }
 
 #display-nav {
@@ -173,5 +173,5 @@ input {
 }
 
 #display-nav a:hover {
-  color: #cfa53f;
+    color: #cfa53f;
 }

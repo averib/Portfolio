@@ -112,6 +112,10 @@
     max-width: 100%;
   }
 
+  .full-span img {
+    width: 100%;
+  }
+
   #ux-ui-process .box-col1 {
     background-color: rgba(207, 165, 62, 0.8);
   }
@@ -140,7 +144,7 @@
 
   footer .box-col1 {
     align-self: center;
-    }
+  }
 
   footer img {
     margin-left: 1rem;
@@ -174,4 +178,3 @@
     background-color: transparent;
   }
 }
-
